@@ -9,25 +9,6 @@ public class Reference
     private int _endverse;
 
 
-    public Reference()
-    {
-        _book = "";
-    }
-    public Reference()
-    {
-    _chapter ="" ;
-    }
-    public Reference()
-    {
-    _verse = ;
-
-    }
-    public Reference()
-    {
-    _endverse = "";
-    }
-
-
     public Reference(string book, int chapter, int verse)
     {
         _book = book;
@@ -45,22 +26,7 @@ public class Reference
         _verse = endVerse;
     }
 
-    public string OneVerse()
-    {
-        if (_verse == _endverse)
-        {
-            return $"{_book} {_chapter} {_verse}";
-        }
-        else
-            return$"{_book} {_chapter} {_verse} {_endverse}";
-    }
 
-
-
-    public void DisplayText()
-    {
-
-    }
 
 
 }
