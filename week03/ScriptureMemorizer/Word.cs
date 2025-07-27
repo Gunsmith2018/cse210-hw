@@ -7,13 +7,12 @@ public class Word
     {
         _text = "";// Constructor
     }
-    _text Text = new _text(); // This line has an error ( _text )
-
     public Word(string text)
     {
         _text = text;
     }
 
+    
 
     public void ConvertHidden()
     {

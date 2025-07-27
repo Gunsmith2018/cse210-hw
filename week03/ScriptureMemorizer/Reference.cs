@@ -9,6 +9,25 @@ public class Reference
     private int _endverse;
 
 
+    public Reference()
+    {
+        _book = "";
+    }
+    public Reference()
+    {
+    _chapter ="" ;
+    }
+    public Reference()
+    {
+    _verse = ;
+
+    }
+    public Reference()
+    {
+    _endverse = "";
+    }
+
+
     public Reference(string book, int chapter, int verse)
     {
         _book = book;
