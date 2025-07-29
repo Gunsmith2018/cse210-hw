@@ -14,8 +14,6 @@ public class Reference
         _book = book;
         _chapter = chapter;
         _verse = verse;
-        _verse = verse;
-
     }
 
     public Reference(string book, int chapter, int startVerse, int endVerse)
@@ -23,10 +21,18 @@ public class Reference
         _book = book;
         _chapter = chapter;
         _verse = startVerse;
-        _verse = endVerse;
+        _endverse = endVerse;
     }
 
-
+    public void GetDisplayText()
+    {
+        if (_verse <= 0)
+        {
+            Console.WriteLine($"{_book} {_chapter} {_verse}");
+        }
+        else
+            Console.WriteLine($"{_book} {_chapter} {_verse} {_endverse}");
+    }
 
 
 }

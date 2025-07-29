@@ -9,6 +9,7 @@ public class Journal
         PromptGenerator generator = new PromptGenerator();
         Console.WriteLine(generator.GetRandomPrompt());
         Console.Write("Enter your Journal Entry: ");
+        
         string entryText = Console.ReadLine();
 
         string timestamp = DateTime.Now.ToString("yyyy-MM-dd"); // Format: 2025-07-11

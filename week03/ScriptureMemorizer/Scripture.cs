@@ -21,42 +21,4 @@ public class Scriptures
     }
     
 
-
-
-    /*
-
-    public void _Reference()
-    {
-        Reference reference - new Reference();
-        Console.WriteLine(scripture.GetRandomScripture());
-        
-    }
-
-
-_reference
-_words
-GetDisplayText()
-IsCompletelyHidden(): bool
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    */
-
 }

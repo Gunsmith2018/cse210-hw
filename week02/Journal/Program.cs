@@ -4,7 +4,7 @@ class Program
 {
     private string TitleArt = "=== Journal Beta ===";
     private Journal journal = new Journal();
-    static void Main(string[] args)
+static void Main(string[] args)
     {
         Program program = new Program();
         program.Run(); // This will start the menu and flow
