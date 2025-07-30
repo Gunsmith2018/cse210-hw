@@ -12,6 +12,11 @@ public class Scriptures
          "1 Nephi 3:7: And it came to pass that I, Nephi said unto my father: I will go and do the things which the Lord hath commanded..."
     };
 
+    public Scriptures()
+    {
+        Scripture = Scripture.split;
+    }
+
 
     public string GetRandomScripture()
     {
