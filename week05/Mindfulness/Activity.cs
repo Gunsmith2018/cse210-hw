@@ -1,19 +1,17 @@
-public class Activity
+public class Activity // This is the Base or Parent class. 
 {
+    // ================ Strings ==========================
     protected string _name = "";
     protected string _description = "";
     protected string _duration = "";
-
-
-
-
-    public Activity()
+    // ================= Functions =======================
+    public Activity() // Constructors
     {
         _name = "";
         _description = "";
         _duration = "";
     }
-    public Activity(string name, string description, string duration)
+    public Activity(string name, string description, string duration) // Constructor
     {
         _name = name;
         _description = description;
@@ -21,48 +19,25 @@ public class Activity
     }
 
 
-    public Activity()
+    public void DisplayStartingMessage() // Welcome Message 
+    {
+        Console.WriteLine("Wellcome to the BETA for Mindfullness. ");
+    }
+
+    public void DisplayEndingMessage() // Good Bye Message
+    {
+        Console.WriteLine("Thank you for using Mindfullness BETA.");
+    }
+
+    public void ShowSpinner(int seconds)  //
     {
 
     }
 
-    public void DisplayStartingMessage()
+    public void ShowCountDown(int seconds) //
     {
 
     }
-
-    public void DisplayEndingMessage()
-    {
-
-    }
-
-    public void ShowSpinner(seconds int)
-    {
-
-    }
-
-    public void ShowCountDown(seconds int)
-    {
-
-    }
-
-
-
-
-
-
-
-
-    
-    */
-
-
-
-
-
-
-
-
 
 
 
