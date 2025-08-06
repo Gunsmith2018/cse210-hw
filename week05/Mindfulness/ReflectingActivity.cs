@@ -1,25 +1,30 @@
+using System.ComponentModel;
 using System.IO.Compression;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 
-public class ReflectingActivity
+public class ReflectingActivity : Activity
 {
-
+    //====================== Strings ============================//
     private string[] _prompts = new string[]
     {
-        
+
     };
     private string[] _questions = new string[]
     {
 
     };
+    //====================== Strings ============================//
 
-
-    public ReflectingActivity()
+    //====================== Construcors ============================//
+    public ReflectingActivity(string name, string description, string duration, string prompts, string questions) : base(name, description, duration)
     {
-
+        _prompts = prompts.Split(',');
+        _questions = questions.Split(',');
     }
+    //====================== Constructors ============================//
 
+    //====================== Functions ============================//
     public void DisplayPrompt()
     {
         foreach (string prompts in _prompts)
@@ -29,13 +34,13 @@ public class ReflectingActivity
 
     }
 
-        public void DeisplayQuestion()
+    public void DeisplayQuestion()
     {
         foreach (string question in _questions)
         {
             Console.WriteLine(question);
         }
-        
+
     }
     public string GetRandomPrompt()
     {
@@ -67,7 +72,7 @@ public class ReflectingActivity
         Console.WriteLine("Entry saved!");
     }
 
-        public void ReadJournal()
+    public void ReadJournal()
     {
         if (File.Exists("reflect_entry.txt"))
         {
@@ -92,13 +97,13 @@ public class ReflectingActivity
             Console.WriteLine("No Entry to delete. ");
         }
     }
+    //====================== Functions ============================//
 
-
-
-    private void Run()  // Run's Reflecting Program
+    //====================== Run program ============================//
+    public void run()  // Run's Reflecting Program
     {
 
     }
-
+    //====================== Run program ============================//
 
 }

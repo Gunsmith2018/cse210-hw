@@ -10,7 +10,7 @@ public class MathAssignment2 : Assignment
         _problems = "BETA2";         // These will need editing to pass varaibles through
 
     }
-    public MathAssignment2(string booksection, string problems) : base(studentName)
+    public MathAssignment2(string studentName, string topic, string booksection, string problems) : base(studentName, topic)
     {
         _textbookSection = booksection;
         _problems = problems;         // These will need editing to pass varaibles through

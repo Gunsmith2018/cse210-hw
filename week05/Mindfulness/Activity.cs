@@ -4,21 +4,23 @@ public class Activity // This is the Base or Parent class.
     protected string _name = "";
     protected string _description = "";
     protected string _duration = "";
-    // ================= Functions =======================
-    public Activity() // Constructors
+
+
+    // ================= Constructors =======================
+    public Activity()
     {
-        _name = "";
-        _description = "";
-        _duration = "";
+        _name = "BASE BETA";
+        _description = "BASE BETA";
+        _duration = "BASE BETA";
     }
-    public Activity(string name, string description, string duration) // Constructor
+    public Activity(string name, string description, string duration)
     {
         _name = name;
         _description = description;
         _duration = duration;
     }
 
-
+    // ================= Functions =======================
     public void DisplayStartingMessage() // Welcome Message 
     {
         Console.WriteLine("Wellcome to the BETA for Mindfullness. ");
@@ -29,14 +31,39 @@ public class Activity // This is the Base or Parent class.
         Console.WriteLine("Thank you for using Mindfullness BETA.");
     }
 
-    public void ShowSpinner(int seconds)  //
+    public void ShowSpinner(int seconds)  // spinner or throbber
     {
+        {
+            List<string> animationString = new List<string>();
+            animationString.Add("|");
+            animationString.Add("/");
+            animationString.Add("-");
+            animationString.Add("\\");
+            animationString.Add("|");
+            animationString.Add("/");
+            animationString.Add("-");
+            animationString.Add("\\");
 
+
+            foreach (string s in animationString)
+            {
+                Console.Write(s);
+                Thread.Sleep(1000);
+                Console.Write("\b \b");
+            }
+
+        }
     }
 
-    public void ShowCountDown(int seconds) //
+    public void ShowCountDown(int seconds) // Count Down
     {
-
+        for (int i = 5; i > 0; i--)
+        {
+            Console.Write(i);
+            Thread.Sleep(1000);
+            Console.Write("\b \b");
+        }
+        Console.WriteLine();
     }
 
 
